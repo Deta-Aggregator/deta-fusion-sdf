@@ -5,7 +5,7 @@
 ### Real world example
 
 ```typescript
-import {AuctionCalculator} from '@1inch/fusion-sdk'
+import {AuctionCalculator} from '@deta/fusion-sdk'
 
 const limitOrderStruct = {
     allowedSender: '0x0000000000000000000000000000000000000000',
@@ -64,7 +64,7 @@ const auctionTakingAmount = calculator.calcAuctionTakingAmount(
 **Examples:**
 
 ```typescript
-import {AuctionCalculator} from '@1inch/fusion-sdk'
+import {AuctionCalculator} from '@deta/fusion-sdk'
 
 const limitOrderStruct = {
     allowedSender: '0x0000000000000000000000000000000000000000',
@@ -86,7 +86,7 @@ AuctionCalculator.fromLimitOrderV3Struct(limitOrderStruct)
 
 ### AuctionCalculator.calcRateBump
 
-**Description:** used to calculate exchange rate in some point of time. user can read more about it [here](https://docs.1inch.io/docs/fusion-swap/introduction)
+**Description:** used to calculate exchange rate in some point of time. user can read more about it [here](https://docs.deta.io/docs/fusion-swap/introduction)
 
 **Arguments**: time (unix timestamp)
 
@@ -111,7 +111,7 @@ AuctionCalculator.fromLimitOrderV3Struct(limitOrderStruct)
 **Example:**
 
 ```typescript
-import {AuctionSuffix, AuctionSalt, AuctionCalculator} from '@1inch/fusion-sdk'
+import {AuctionSuffix, AuctionSalt, AuctionCalculator} from '@deta/fusion-sdk'
 
 const suffix = AuctionSuffix.decode(
     '0x000c004e200000000000000000219ab540356cbb839cbe05303d7705faf486570009'

@@ -127,7 +127,7 @@ describe('Limit Order', () => {
         expect(order.getTypedData()).toStrictEqual({
             domain: {
                 chainId: 1,
-                name: '1inch Aggregation Router',
+                name: 'deta Aggregation Router',
                 verifyingContract: '0x1111111254eeb25477b68fb85ed929f73a960582',
                 version: '5'
             },

@@ -3,7 +3,7 @@
 **Example:**
 
 ```typescript
-import {AuctionSalt, AuctionSuffix, FusionOrder} from '@1inch/fusion-sdk'
+import {AuctionSalt, AuctionSuffix, FusionOrder} from '@deta/fusion-sdk'
 
 const salt = new AuctionSalt({
     duration: 180,

@@ -59,7 +59,7 @@ export class AuctionCalculator {
     }
 
     /**
-     * @see https://github.com/1inch/limit-order-settlement/blob/3c7cf9eacbaf7a60624d7a6f069c59d809f2204a/contracts/libraries/OrderSuffix.sol#L75
+     * @see https://github.com/deta/limit-order-settlement/blob/3c7cf9eacbaf7a60624d7a6f069c59d809f2204a/contracts/libraries/OrderSuffix.sol#L75
      * @param time auction timestamp in seconds
      */
     calcRateBump(time: number): number {

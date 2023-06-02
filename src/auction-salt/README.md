@@ -11,7 +11,7 @@
 **Examples:**
 
 ```typescript
-import {AuctionSalt} from '@1inch/fusion-sdk'
+import {AuctionSalt} from '@deta/fusion-sdk'
 
 const salt = new AuctionSalt({
     duration: 180 // in seconds,
@@ -27,7 +27,7 @@ salt.build()
 Or user can pass optional parameter in constructor to control entropy (be default we use randomInt 10000)
 
 ```typescript
-import {AuctionSalt} from '@1inch/fusion-sdk'
+import {AuctionSalt} from '@deta/fusion-sdk'
 
 // your random generated string
 const saltString = myCustomRandFunction()
@@ -48,7 +48,7 @@ salt.build()
 **Arguments:** string
 
 ```typescript
-import {AuctionSalt} from '@1inch/fusion-sdk'
+import {AuctionSalt} from '@deta/fusion-sdk'
 
 const salt = AuctionSalt.decode(
     '45118768841948961586167738353692277076075522015101619148498725069326976549864'

@@ -20,6 +20,6 @@ export const Order = [
     {name: 'interactions', type: 'bytes'}
 ]
 
-export const LimitOrderV3TypeDataName = '1inch Aggregation Router'
+export const LimitOrderV3TypeDataName = 'deta Aggregation Router'
 export const LimitOrderV3TypeDataVersion = '5'
 export const VerifyingContract = ONE_INCH_ROUTER_V5

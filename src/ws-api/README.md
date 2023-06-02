@@ -5,10 +5,10 @@
 ## Real world example
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -22,10 +22,10 @@ wsSdk.order.onOrder((data) => {
 **With constructor:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 ```
@@ -35,13 +35,13 @@ const ws = new WebSocketApi({
 User can provide custom provider for websocket (be default we are using [ws library](https://www.npmjs.com/package/ws))
 
 ```typescript
-import {WsProviderConnector, WebSocketApi} from '@1inch/fusion-sdk'
+import {WsProviderConnector, WebSocketApi} from '@deta/fusion-sdk'
 
 class MyFancyProvider implements WsProviderConnector {
     // ... user implementation
 }
 
-const url = 'wss://fusion.1inch.io/ws/v1.0/1'
+const url = 'wss://fusion.deta.io/ws/v1.0/1'
 const provider = new MyFancyProvider({url})
 
 const wsSdk = new WebSocketApi(provider)
@@ -50,10 +50,10 @@ const wsSdk = new WebSocketApi(provider)
 **With new static method:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = WebSocketApi.new({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 ```
@@ -63,10 +63,10 @@ const ws = WebSocketApi.new({
 By default when user creates an instance of WebSocketApi, it automatically opens websocket connection which might be a problem for some use cases
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM,
     lazyInit: true
 })
@@ -90,10 +90,10 @@ ws.init()
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -120,10 +120,10 @@ ws.on('message', function message(data) {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -153,10 +153,10 @@ ws.off('message', message)
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -176,10 +176,10 @@ ws.onOpen(() => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -193,10 +193,10 @@ ws.send('my message')
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -214,10 +214,10 @@ ws.close()
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -233,10 +233,10 @@ ws.onMessage((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -256,10 +256,10 @@ ws.onClose(() => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -281,10 +281,10 @@ ws.onError((error) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -309,10 +309,10 @@ ws.order.onOrder((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -332,10 +332,10 @@ ws.order.onOrderCreated((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -355,10 +355,10 @@ ws.order.onOrderInvalid((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -378,10 +378,10 @@ ws.order.onOrderBalanceOrAllowanceChange((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -401,10 +401,10 @@ ws.order.onOrderFilled((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -426,10 +426,10 @@ ws.order.onOrderFilledPartially((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -445,10 +445,10 @@ ws.rpc.onPong((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -462,10 +462,10 @@ ws.rpc.ping()
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -483,10 +483,10 @@ ws.rpc.getAllowedMethods()
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -502,10 +502,10 @@ ws.rpc.onGetAllowedMethods((data) => {
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -523,10 +523,10 @@ ws.rpc.getActiveOrders()
 **Example:**
 
 ```typescript
-import {WebSocketApi, NetworkEnum} from '@1inch/fusion-sdk'
+import {WebSocketApi, NetworkEnum} from '@deta/fusion-sdk'
 
 const ws = new WebSocketApi({
-    url: 'wss://fusion.1inch.io/ws',
+    url: 'wss://fusion.deta.io/ws',
     network: NetworkEnum.ETHEREUM
 })
 

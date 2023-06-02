@@ -5,11 +5,11 @@
 ## Real world example
 
 ```typescript
-import {FusionSDK, NetworkEnum} from '@1inch/fusion-sdk'
+import {FusionSDK, NetworkEnum} from '@deta/fusion-sdk'
 
 async function main() {
     const sdk = new FusionSDK({
-        url: 'https://fusion.1inch.io',
+        url: 'https://fusion.deta.io',
         network: NetworkEnum.ETHEREUM
     })
 
@@ -75,9 +75,9 @@ class CustomHttpProvider implements HttpProviderConnector {
 **Example:**
 
 ```typescript
-import {FusionSDK, NetworkEnum} from '@1inch/fusion-sdk'
+import {FusionSDK, NetworkEnum} from '@deta/fusion-sdk'
 const sdk = new FusionSDK({
-    url: 'https://fusion.1inch.io',
+    url: 'https://fusion.deta.io',
     network: NetworkEnum.ETHEREUM
 })
 const orders = await sdk.getActiveOrders({page: 1, limit: 2})
@@ -94,9 +94,9 @@ const orders = await sdk.getActiveOrders({page: 1, limit: 2})
 **Example:**
 
 ```typescript
-import {FusionSDK, NetworkEnum} from '@1inch/fusion-sdk'
+import {FusionSDK, NetworkEnum} from '@deta/fusion-sdk'
 const sdk = new FusionSDK({
-    url: 'https://fusion.1inch.io',
+    url: 'https://fusion.deta.io',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -118,9 +118,9 @@ const orders = await sdk.getOrdersByMaker({
 **Example:**
 
 ```typescript
-import {FusionSDK, NetworkEnum, QuoteParams} from '@1inch/fusion-sdk'
+import {FusionSDK, NetworkEnum, QuoteParams} from '@deta/fusion-sdk'
 const sdk = new FusionSDK({
-    url: 'https://fusion.1inch.io',
+    url: 'https://fusion.deta.io',
     network: NetworkEnum.ETHEREUM
 })
 
@@ -155,7 +155,7 @@ const blockchainProvider = new PrivateKeyProviderConnector(
 )
 
 const sdk = new FusionSDK({
-    url: 'https://fusion.1inch.io',
+    url: 'https://fusion.deta.io',
     network: 1,
     blockchainProvider
 })

@@ -1,13 +1,13 @@
 {
-    "name": "@1inch/fusion-sdk",
+    "name": "@deta/fusion-sdk",
     "version": "0.1.8",
-    "description": "1inch Fusion Mode SDK",
+    "description": "deta Fusion Mode SDK",
     "private": false,
     "main": "index.js",
     "types": "index.d.ts",
     "repository": {
         "type": "git",
-        "url": "ssh://git@github.com:1inch/fusion-sdk.git"
+        "url": "ssh://git@github.com:deta/fusion-sdk.git"
     },
     "publishConfig": {
         "access": "public",

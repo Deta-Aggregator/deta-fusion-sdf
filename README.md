@@ -1,17 +1,17 @@
-# Utils library for 1inch Fusion Mode
+# Utils library for deta Fusion Mode
 
 ## Installation
 
 ### Npm
 
 ```
-npm install @1inch/fusion-sdk
+npm install @deta/fusion-sdk
 ```
 
 ### Yarn
 
 ```
-yarn add @1inch/fusion-sdk
+yarn add @deta/fusion-sdk
 ```
 
 ## Modules docs
@@ -37,7 +37,7 @@ const blockchainProvider = new PrivateKeyProviderConnector(
 )
 
 const sdk = new FusionSDK({
-    url: 'https://fusion.1inch.io',
+    url: 'https://fusion.deta.io',
     network: 1,
     blockchainProvider
 })
@@ -52,7 +52,7 @@ sdk.placeOrder({
 
 ## Resolvers
 
-`settleOrders` function usage and Resolver contract examples you can find [here](https://github.com/1inch/fusion-resolver-example)
+`settleOrders` function usage and Resolver contract examples you can find [here](https://github.com/deta/fusion-resolver-example)
 
 ## Other language implementations
 
